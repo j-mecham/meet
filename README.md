@@ -10,16 +10,22 @@ Calendar API to fetch upcoming events
 - Use the App When Offline.
 - Add an App Shortcut to the Home Screen.
 - Display Charts Visualizing Event Details.
-### User Stories(US)/(TS)Test Scenarios
-- **US:**As a user, I would like to be able to filter events by city so that I can see the list of events that
+### User Stories\(US\)/Test Scenarios\(TS\)\(Gherkin Syntax\)
+- **US**: As a user, I would like to be able to filter events by city so that I can see the list of events that
 take place in that city.
-- As a user, I would like to be able to show/hide event details so that I can see more/less
+  - **TS**: Given the home page of a logged in user account, when a user searches for a city, then they can choose that city to only see events there.
+- **US**: As a user, I would like to be able to show/hide event details so that I can see more/less
 information about an event.
-- As a user, I would like to be able to specify the number of events I want to view in the app so
+  - **TS**: Given an event is displayed on screen, when a user clicks a "show details" button, then the event's details will be displayed to the user.
+- **US**: As a user, I would like to be able to specify the number of events I want to view in the app so
 that I can see more or fewer events in the events list at once.
-- As a user, I would like to be able to use the app when offline so that I can see the events I
+  - **TS**: Given a list of events is displayed on screen, when a user selects a list size option, then they can specify how many events they want to see. 
+- **US**: As a user, I would like to be able to use the app when offline so that I can see the events I
 viewed the last time I was online.
-- As a user, I would like to be able to add the app shortcut to my home screen so that I can
+  - **TS**: Given the app is being used offline, when a user wants to still see the events they previously viewed, then they may see what was availiable the last time they were online.
+- **US**: As a user, I would like to be able to add the app shortcut to my home screen so that I can
 open the app faster.
-- As a user, I would like to be able to see a chart showing the upcoming events in each city so
-that I know what events are organized in which city
+  - **TS**: Given a user has set up their account, when they want quicker access from their Home Screen, they can find an option to add a shortcut to the app.
+- **US**: As a user, I would like to be able to see a chart showing the upcoming events in each city so
+that I know what events are organized in which city.
+  - **TS**: Given a user wants a visualization of event details, when they choose a chart option, then they can see what events are organized in each city. 
