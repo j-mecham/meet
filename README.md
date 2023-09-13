@@ -28,4 +28,7 @@ open the app faster.
   - **TS**: Given a user has set up their account, when they want quicker access from their Home Screen, they can find an option to add a shortcut to the app.
 - **US**: As a user, I would like to be able to see a chart showing the upcoming events in each city so
 that I know what events are organized in which city.
-  - **TS**: Given a user wants a visualization of event details, when they choose a chart option, then they can see what events are organized in each city. 
+  - **TS**: Given a user wants a visualization of event details, when they choose a chart option, then they can see what events are organized in each city.
+### How Meet App will use Serverless functions
+The Meet App will use serverless mostly in the backend, using Node/Express as Lambda functions, hosted on AWS. It will also be used in the authorization process to use OAuth with the Google Calendar API. Serverless functions will handle filtering of events and to generate charts for users to view. Using serverless will allow the app to be deployed quickly and easily and have flexible scalability for high or low traffic.
+
