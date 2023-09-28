@@ -1,38 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+:root {
+  --light-gray: #e2e2e2;
+  --sky-blue: #a9d6e5;
+  --deep-teal: #19747e;
+  --soft-mint: #d1e8e2;
+}
+
+*:not(.not-me) {
+  background-color: var(--light-gray);
+}
+
 .App {
+  text-align: center;
+  padding: 2% 5%;
+  background-color: var(--light-gray);
+}
+
+.App * {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  margin: 5px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input[type="text"],
+input[type="number"] {
+  padding: 8px 6px 8px 10px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: var(--sky-blue);
+  font-size: 14px;
+  line-height: 20px;
+  align-self: center;
+  height: 38px;
+  margin-bottom: 20px;
+}
+
+.details {
+  background-color: var(--soft-mint);
+}
+
+.city {
+  width: 250px;
+}
+
+#city-search {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: auto;
+  position: relative;
+}
+
+.suggestions {
+  width: 250px;
+  position: absolute;
+  top: 45px;
+  z-index: 2;
+  align-self: center;
+  margin: 0;
+  font-size: 14px;
+  background-color: var(--sky-blue);
+  box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
+}
+
+.suggestions > li {
+  text-align: left;
+  padding: 8px 6px 8px 10px;
+  cursor: default;
+  background-color: var(--light-gray);
+}
+
+.suggestions > li:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.suggestions > li:hover {
+  background-color: #bcdcdb;
+}
+
+.event {
+  padding: 10px 10px 35px;
+  background-color: var(--soft-mint);
+  margin-bottom: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+}
+
+.details-btn {
+  background-color: var(--deep-teal);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-top: 10px;
+  right: 5px;
+  bottom: 5px;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
