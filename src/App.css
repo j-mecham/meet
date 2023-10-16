@@ -53,6 +53,11 @@ input[type="number"] {
   margin-bottom: 20px;
 }
 
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .details {
   background-color: var(--soft-mint);
 }
@@ -125,4 +130,10 @@ input[type="number"] {
   left: 20px;
   width: 250px;
   z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .charts-container {
+    grid-template-columns: 1fr;
+  }
 }
