@@ -35,7 +35,6 @@ const CityEventsChart = ({ allLocations, events }) => {
               bottom: 60,
               left: -30,
             }}
-            fill="#19747e"
           >
             <CartesianGrid />
             <XAxis 
